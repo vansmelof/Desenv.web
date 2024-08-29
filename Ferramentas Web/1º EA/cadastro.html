@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Preencha os dados</h2>
+        <form id="contactForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            
+            <label for="residencia">Residência:</label>
+            <input type="text" id="residencia" name="residencia" required>
+            
+            <label>Preferências de Alimentação:</label>
+            <div class="preferences">
+                <label>
+                    <input type="radio" name="preferencias" value="Vegana" required> Vegano
+                </label>
+                <label>
+                    <input type="radio" name="preferencias" value="Vegetariana" required> Vegetariano
+                </label>
+                <label>
+                    <input type="radio" name="preferencias" value="Carnívoro" required> Carnívoro
+                </label>
+                <label for="outras_preferencias">Outras Preferências:</label>
+                <input type="text" id="outras_preferencias" name="outras_preferencias">
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" class="save-button">Salvar</button>
+                <button type="reset" class="clear-button">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
